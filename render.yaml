@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: catawiki-scraper
+    runtime: python
+    buildCommand: pip install -r requirements.txt && playwright install
+    startCommand: python scraper.py
+    plan: free
